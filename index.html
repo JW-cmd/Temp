@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>评论列表</title>
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7.css"/>
+    <script src = "lib/jquery.js"></script>
+    <script src = "js/cmt.js"></script>
+    <style>
+        .panel-body div,button{
+            margin:5px 0px;
+        }
+    </style>
+</head>
+<body style = "padding : 20px 50px"> 
+
+    <!-- 评论面板 -->
+    <div class = "panel panel-primary">
+        <div class = "panel-heading">
+            <h3 class = "panel-title">发表评论</h3>
+        </div>
+        <form class = "panel-body" id = "cmt_content">
+            <div>评论人：</div>
+            <input type = "text" class = "form-control" name = "username"/>
+            <div>评论内容：</div>
+            <!-- 文本域支持多行文本 -->
+            <textarea class = "form-control" name = "content"></textarea>
+            <button type = "submit" class = "btn btn-primary">发表评论</button>
+        </form>
+    </div>
+
+    <!-- 评论列表 -->
+    <ul class = "list-group" id = "cmt_list">
+        <li class = "list-group-item">
+            <span style = "background-color: rgb(121, 181, 204);" class = "badge">发表人：</span>
+            <span style = "background-color:thistle;" class = "badge">发表时间：</span>
+            内容
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.box{
+    width:700px;
+    margin:50px auto;
+    
+}
+
+.list{
+    width:100%;
+    margin:30px auto;
+    display:flex;
+}
+.list span{
+   font-weight: bold; 
+   display: inline-block;
+   /* width:20%; */
+   margin:0px 30px;
+}
+
+.list input,textarea{
+    display: inline-block;
+    /* width:80%; */
+    flex:1;
+}
+.btn{
+    width:60%;
+    margin:20px auto;
+    display:flex;
+}
+.btn div{
+    flex:1;
+    height:30px;
+    text-align: center;
+    
+}
+.btn button{
+    display: inline-block;
+    background-color: rgb(178, 195, 226);
+    height: 30px;
+    padding: 0px 30px;
+    border:1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+}

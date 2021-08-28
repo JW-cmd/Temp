@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href = "./css/project01.css"/>
+    <script src = "lib/jquery.js"></script>
+    <script src = "js/project01.js"></script>
+    
+</head>
+<body>
+    <!-- 默认是GET请求，指定请求方式为POST -->
+    <form id = "register" method = "POST" class = "box">
+        <div class = "list">
+            <span>姓名</span><input type = "text" name = "username" placeholder="姓名"/>
+        </div>
+        <div class = "list">
+            <span>头像</span><input type = "file" name = "avatar"/>
+        </div>
+        <div class = "list">
+            <span>电话</span><input type = "text" name = "telephone" placeholder="电话"/>
+        </div>
+        <div class = "list">
+            <span>邮箱</span><input type = "text" name = "email" placeholder="邮箱"/>
+        </div>
+        <div class = "list">
+            <span>性别</span>
+            <label for = "radio1">
+                <input type = "radio" id = "radio1" name = "sex" value = "男" checked/>
+                男
+            </label>
+            <label for = "radio2">
+                <input type = "radio" id = "radio2" name = "sex" value = "女"/>
+                女
+            </label>
+        </div>
+        <div class = "list">
+            <span>年龄</span><input type = "text" name = "age" placeholder="年龄"/>
+        </div>
+        <div class = "list">
+            <span>简介</span><textarea name = "introduction"></textarea>
+        </div>
+        <div class = "btn">
+            <div>
+                <button type = "submit">提交</button>
+            </div>
+            <div>
+                <button type = "reset">重置</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
